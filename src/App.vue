@@ -5,6 +5,8 @@
 </template>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
 *,
 *:before,
 *:after {
@@ -13,7 +15,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   box-sizing: border-box;
