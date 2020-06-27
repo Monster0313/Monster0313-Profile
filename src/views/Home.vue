@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <SocialMedia></SocialMedia>
     <div class="chat">
       <TopBar></TopBar>
       <!-- TODO 透過參數取得使用者按對話內容，判斷當下對話內容決定是否用：「你還要再問同樣的問題嗎？」等回覆 -->
@@ -14,6 +15,7 @@
 import Card from "../components/Card";
 import TopBar from "../components/TopBar";
 import Question from "../components/Question";
+import SocialMedia from "../components/SocialMedia";
 
 import { mapState } from "vuex";
 
@@ -22,7 +24,8 @@ export default {
   components: {
     Card,
     TopBar,
-    Question
+    Question,
+    SocialMedia
   },
   data() {
     return {
@@ -91,5 +94,28 @@ $scrollbar-color-back: rgba(
 
 *::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    .chat {
+      width: 300px;
+      height: 80vh;
+      border-radius: 10px;
+      position: relative;
+      padding-right: -17px; //scroll-bar hidden
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scrollbar-width: none;
+      background-color: rgba($color: #ffffff, $alpha: 0.2);
+    }
+  }
 }
 </style>

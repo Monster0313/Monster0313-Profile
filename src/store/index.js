@@ -86,12 +86,16 @@ const state = {
     },
     {
       title: "contact",
-      msg: "右上角那邊是我的Facebook、Github以及Linkedin"
+      msg: "右上角是我的Facebook、Instgram、Linkedin、Github以及【履歷】"
+    },
+    {
+      title: "contact",
+      msg: "沒錯！我正在積極求職中！"
     },
     {
       title: "contact",
       msg:
-        "如果是正式邀約或是提案，請透過電子郵件：「y779380@gmail.com」附上主旨與您的聯絡方式喔。"
+        "如果是正式邀約或是提案，請透過電子郵件：「y779380@gmail.com」附上主旨與你的聯絡方式喔。"
     },
     {
       title: "contact",

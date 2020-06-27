@@ -69,4 +69,24 @@ export default {
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .question-button {
+    button {
+      background-color: #f5fafa;
+      border: none;
+      min-width: 80px;
+      height: 20px;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 14px;
+      color: #414141;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #414141;
+        color: #f5fafa;
+      }
+    }
+  }
+}
 </style>

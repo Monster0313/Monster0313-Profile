@@ -38,7 +38,7 @@ export default {
 <style lang="scss" scoped>
 .card-outside-wall {
   width: 100%;
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 50px;
   display: flex;
   justify-content: flex-start;
@@ -102,6 +102,82 @@ export default {
               width: 100%;
               font-size: 15px;
               text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-outside-wall {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    .card-outside-wrap {
+      .ask-card-wall {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: right;
+        flex-direction: row;
+        .ask-card-wrap {
+          max-width: 200px;
+          min-height: 28px;
+          display: inline-block;
+          border-radius: 10px;
+          margin-right: 15px;
+          background-color: rgba($color: #f5fafa, $alpha: 0.6);
+          .ask-card {
+            margin: auto;
+            padding: 10px;
+            p {
+              width: 100%;
+              font-size: 14px;
+              text-align: left;
+            }
+          }
+        }
+      }
+      .card-inside-wall {
+        width: 100%;
+        margin-bottom: 20px;
+        .img-card-pack {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: row;
+          .img-wrap {
+            width: auto;
+            margin-left: 20px;
+            margin-top: 5px;
+            img {
+              width: 30px;
+              border-radius: 50%;
+            }
+          }
+          .card-wrap {
+            max-width: 200px;
+            min-height: 28px;
+            display: inline-block;
+            border-radius: 10px;
+            margin-left: 15px;
+            background-color: rgba($color: #f5fafa, $alpha: 0.4);
+            .card {
+              margin: auto;
+              padding: 10px;
+              p {
+                width: 100%;
+                font-size: 14px;
+                text-align: left;
+              }
             }
           }
         }

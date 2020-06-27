@@ -63,4 +63,28 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .question {
+    width: 300px;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+    position: fixed;
+    bottom: 10vh;
+    background-color: rgba($color: #19535f, $alpha: 0.95);
+    .question-wall {
+      width: 100%;
+      height: 100%;
+      .question-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+      }
+    }
+  }
+}
 </style>
