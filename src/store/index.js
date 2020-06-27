@@ -15,11 +15,15 @@ const state = {
     },
     {
       title: "ask_skill",
-      msg: "你有什麼專業技術嗎?"
+      msg: "你有什麼專業技術嗎？"
     },
     {
       title: "ask_contact",
       msg: "想知道你的聯絡方式。"
+    },
+    {
+      title: "ask_plan",
+      msg: "你目前有哪些規劃呢？"
     },
     {
       title: "ask_other",
@@ -125,6 +129,14 @@ const state = {
     {
       title: "plan",
       msg: "這是CakeResume的履歷連結：https://ppt.cc/fZckHx"
+    },
+    {
+      title: "plan",
+      msg: "右上角也有履歷連結可以直接點選"
+    },
+    {
+      title: "plan",
+      msg: "另外在此感謝協助測試的朋友們！"
     }, // Other start
     {
       title: "other",

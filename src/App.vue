@@ -19,7 +19,9 @@ html {
   font-size: 16px;
   word-spacing: 1px;
   box-sizing: border-box;
-
+  width: 100%;
+  height: 100%;
+  height: -webkit-fill-available;
   body {
     background-image: linear-gradient(20deg, #02c39a, #028090, #05668d);
   }

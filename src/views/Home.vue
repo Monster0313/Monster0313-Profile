@@ -74,6 +74,8 @@ $scrollbar-color-back: rgba(
 .container {
   margin: 0 auto;
   min-height: 100vh;
+  width: 100vw;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +83,8 @@ $scrollbar-color-back: rgba(
   overflow: hidden;
   .chat {
     width: 500px;
-    height: 80vh;
+    min-height: 80vh;
+    max-height: 80vh;
     border-radius: 10px;
     position: relative;
     padding-right: -17px; //scroll-bar hidden
