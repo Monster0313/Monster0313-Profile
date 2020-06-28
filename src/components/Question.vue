@@ -8,7 +8,7 @@
           :ask-title="'ask_about'"
         ></QuestionButton>
         <QuestionButton
-          :question-text="'技能樹'"
+          :question-text="'專業技能'"
           :question-title="'skill'"
           :ask-title="'ask_skill'"
         ></QuestionButton>
@@ -70,7 +70,7 @@ export default {
     height: 70px;
     border-radius: 0 0 10px 10px;
     position: fixed;
-    bottom: 10vh;
+    bottom: 10%;
     background-color: rgba($color: #19535f, $alpha: 0.95);
     .question-wall {
       width: 100%;

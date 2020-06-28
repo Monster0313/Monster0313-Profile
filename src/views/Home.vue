@@ -6,7 +6,7 @@
       <!-- TODO 透過參數取得使用者按對話內容，判斷當下對話內容決定是否用：「你還要再問同樣的問題嗎？」等回覆 -->
       <!-- TODO 每一個指定參數都需綁定物件(對話內容 ID) 用迴圈跑 設回應時間來讀取下一段內容 -->
       <Card :message="storedMessages"></Card>
-      <Question v-if="isShow"></Question>
+      <Question></Question>
     </div>
   </div>
 </template>
@@ -41,8 +41,7 @@ export default {
     },
     ...mapState({
       cardMessages: state => state.cardMessages,
-      storedMessages: state => state.storedCardMessages,
-      isShow: state => state.isShow
+      storedMessages: state => state.storedCardMessages
     })
   },
   methods: {
@@ -83,10 +82,9 @@ $scrollbar-color-back: rgba(
   overflow: hidden;
   .chat {
     width: 500px;
-    min-height: 80vh;
-    max-height: 80vh;
+    height: 80%;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     padding-right: -17px; //scroll-bar hidden
     overflow-y: scroll;
     overflow-x: hidden;
@@ -102,7 +100,7 @@ $scrollbar-color-back: rgba(
 @media screen and (max-width: 600px) {
   .container {
     margin: 0 auto;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,11 +108,12 @@ $scrollbar-color-back: rgba(
     overflow: hidden;
     .chat {
       width: 300px;
-      height: 80vh;
+      height: 80%;
       border-radius: 10px;
-      position: relative;
+      position: fixed;
+      bottom: 10%;
       padding-right: -17px; //scroll-bar hidden
-      overflow-y: scroll;
+      overflow-y: auto;
       overflow-x: hidden;
       scrollbar-width: none;
       background-color: rgba($color: #ffffff, $alpha: 0.2);
